@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/fav-icon.png">
+    <link rel="stylesheet" href="../themes/8008.css" id="root">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../img_css/all.min.css">
+    <link rel="stylesheet" href="../img_css/fontawesome.min.css">
+    <title>User | Turtletype</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="notification_tab hidden">
+            <div class="notification_tab-content">
+                <div class="announcement">
+                    <div class="n_text">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <p>Announcements</p>
+                    </div>
+                    <div class="message_1">
+
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="n_text">
+                        <i class="fa-solid fa-message"></i>
+                        <p>Notifications</p>
+                    </div>
+                    <div class="message_2">
+                        <!-- <div class="box">
+                    <p class="date_time"></p>
+                    <p class="text_message"></p>
+                  </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main_menu is the main front of the site that align the element in the center  -->
+        <div class="main_menu">
+            <!-- header is the upper part of the site that contains logo and user details setting etc -->
+            <div class="header">
+                <div class="main_tab">
+                    <div class="main_tab-logo"><a href="../index.html"><img src="../img/logo.png" alt="">turtletype</a>
+                    </div>
+                    <divl class="main_tab-options">
+                        <ul>
+                            <li><a href="../index.html"><i class="fa-regular fa-keyboard"></i></a></li>
+                            <li>
+                                <div class="leader"><i class="fa-solid fa-crown"></i></div>
+                            </li>
+                            <li><a href="about.html"><i class="fa-solid fa-info"></i></a></li>
+                            <li><a href="settings.html"><i class="fa-solid fa-gear"></i></i></a></li>
+                        </ul>
+                    </divl>
+                </div>
+                <div class="menu">
+                    <div class="menu_notification">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="account">
+                        <a href="../index.html" class="exit_icon hide"><i
+                                class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                        <div class="user_display">
+                            <a href="login.html" class="user_page"><i class="fa-solid fa-user"></i></a>
+                            <div class="display_name"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leader_board hidden">
+                <div class="leader_header">
+                    <h1>All-Time | Leaderbords</h1>
+                    <div class="exit"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <div class="title">
+                    <div>
+                        <p>Time 15</p>
+                        <div class="row_name">
+                            <ul>
+                                <li>#rank</li>
+                                <li>#name</li>
+                                <li>wpm<br><span class="weight">accuracy</span></li>
+                                <li>raw<br><span class="weight">consistency</span></li>
+                                <li>time</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Time 60</p>
+                        <div class="row_name">
+                            <ul>
+                                <li>#rank</li>
+                                <li>#name</li>
+                                <li>wpm<br><span class="weight">accuracy</span></li>
+                                <li>raw<br><span class="weight">consistency</span></li>
+                                <li>time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="leader_body">
+                    <div class="board_15">
+                    </div>
+                    <div class="board_60"></div>
+                </div>
+            </div>
+        </div>
+        <div class="user_details_board">
+            <div class="user_details">
+                <div class="user_icon"><i class="fa-solid fa-user-large"></i></div>
+                <div class="user_info">
+                    <div class="user_name"></div>
+                    <div class="user_id"></div>
+                </div>
+            </div>
+            <div class="user_body">
+                <div class="user_leader_header">
+                    <h1>All-Time | Leaderbords</h1>
+                </div>
+                <div class="user_title">
+                    <ul>
+                        <li>#rank</li>
+                        <li>wpm<br><span class="weight">accuracy</span></li>
+                        <li>raw<br><span class="weight">consistency</span></li>
+                        <li>time</li>
+                    </ul>
+                </div>
+                <div class="user_leaderboard">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../notification.js"></script>
+    <script type="module">
+        import { getSavedTheme, saveTheme, saveName, getName } from './../theme.js';
+        const root = document.getElementById("root");
+        const themeSelect = document.getElementById("theme-select");
+        root.href = `../themes/${getSavedTheme()}.css`;
+        document.querySelector("title").innerText = `${getName()} | Turtletype`;
+    </script>
+    <script src="../logout.js" type="module"></script>
+    <script src="../leaderboard.js"></script>
+    <script src="../user_page.js" type="module"></script>
+</body>
+
+</html>

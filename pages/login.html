@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/fav-icon.png" />
+    <link rel="stylesheet" href="../themes/8008.css" id="root">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../img_css/all.min.css">
+    <link rel="stylesheet" href="../img_css/fontawesome.min.css">
+    <title>Login | Turtletype</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="notification_tab hidden">
+            <div class="notification_tab-content">
+                <div class="announcement">
+                    <div class="n_text">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <p>Announcements</p>
+                    </div>
+                    <div class="message_1">
+
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="n_text">
+                        <i class="fa-solid fa-message"></i>
+                        <p>Notifications</p>
+                    </div>
+                    <div class="message_2">
+                        <!-- <div class="box">
+                    <p class="date_time"></p>
+                    <p class="text_message"></p>
+                  </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main_menu is the main front of the site that align the element in the center  -->
+        <div class="main_menu">
+            <!-- header is the upper part of the site that contains logo and user details setting etc -->
+            <div class="header">
+                <div class="main_tab">
+                    <div class="main_tab-logo"><a href="../index.html"><img src="../img/logo.png" alt="">turtletype</a>
+                    </div>
+                    <divl class="main_tab-options">
+                        <ul>
+                            <li><a href="../index.html"><i class="fa-regular fa-keyboard"></i></a></li>
+                            <li>
+                                <div class="leader"><i class="fa-solid fa-crown"></i></div>
+                            </li>
+                            <li><a href="about.html"><i class="fa-solid fa-info"></i></a></li>
+                            <li><a href="settings.html"><i class="fa-solid fa-gear"></i></i></a></li>
+                        </ul>
+                    </divl>
+                </div>
+                <div class="menu">
+                    <div class="menu_notification">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="account">
+                        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="login_tab">
+                <div class="forms">
+                    <form method="post" class="register">
+                        <p>register</p>
+                        <input type="text" id="username" placeholder="username">
+                        <input type="email" id="mail" placeholder="email">
+                        <input type="email" id="verifyMail" placeholder="verify mail">
+                        <input type="password" id="password" placeholder="password">
+                        <p id="strength"></p>
+                        <input type="password" id="verifyPassword" placeholder="verify password">
+                        <p id="error_message"></p>
+                        <div class="submit_button">
+                            <label for="signup"><i class="fa-solid fa-user-plus"></i></label>
+                            <input type="submit" value="Sign up" id="signup">
+                        </div>
+                    </form>
+                    <form action="" class="login">
+                        <p>login</p>
+                        <input type="email" id="lmail" placeholder="email">
+                        <input type="password" id="lpassword" placeholder="password">
+                        <p id="login_message"></p>
+                        <div class="submit_button">
+                            <label for="signup"><i class="fa-solid fa-right-to-bracket"></i></label>
+                            <input type="submit" value="Login" id="login">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="signup_window hidden">
+        <div class="window">
+            <div class="w_head">
+                <i class="fa-regular fa-circle-check"></i>
+                <h1>SUCCESS</h1>
+            </div>
+            <div class="w_body">
+                <p>Congratulations, your account has been successfully created.</p>
+                <button onclick="window.location.href='login.html'">CONTINUE</button>
+            </div>
+        </div>
+    </div>
+    <div class="leader_board hidden">
+        <div class="leader_header">
+            <h1>All-Time | Leaderbords</h1>
+            <div class="exit"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="title">
+            <div>
+                <p>Time 15</p>
+                <div class="row_name">
+                    <ul>
+                        <li>#rank</li>
+                        <li>#name</li>
+                        <li>wpm<br><span class="weight">accuracy</span></li>
+                        <li>raw<br><span class="weight">consistency</span></li>
+                        <li>time</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>Time 60</p>
+                <div class="row_name">
+                    <ul>
+                        <li>#rank</li>
+                        <li>#name</li>
+                        <li>wpm<br><span class="weight">accuracy</span></li>
+                        <li>raw<br><span class="weight">consistency</span></li>
+                        <li>time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="leader_body">
+            <div class="board_15">
+            </div>
+            <div class="board_60"></div>
+        </div>
+    </div>
+    <script src="../notification.js"></script>
+    <script src="../theme.js" type="module"></script>
+    <script type="module">
+        import { getSavedTheme, saveTheme } from './../theme.js';
+
+        const root = document.getElementById("root");
+        const themeSelect = document.getElementById("theme-select");
+
+        // Set the initial theme based on the saved theme or use the default
+        root.href = `../themes/${getSavedTheme()}.css`;
+    </script>
+    <script src="../login.js" type="module"></script>
+    <script src="../leaderboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/fav-icon.png">
+    <link rel="stylesheet" href="../themes/8008.css" id="root">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../img_css/all.min.css">
+    <link rel="stylesheet" href="../img_css/fontawesome.min.css">
+    <title>Settings | Turtletype</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="notification_tab hidden">
+            <div class="notification_tab-content">
+                <div class="announcement">
+                    <div class="n_text">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <p>Announcements</p>
+                    </div>
+                    <div class="message_1">
+
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="n_text">
+                        <i class="fa-solid fa-message"></i>
+                        <p>Notifications</p>
+                    </div>
+                    <div class="message_2">
+                        <!-- <div class="box">
+                    <p class="date_time"></p>
+                    <p class="text_message"></p>
+                  </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main_menu is the main front of the site that align the element in the center  -->
+        <div class="main_menu">
+            <!-- header is the upper part of the site that contains logo and user details setting etc -->
+            <div class="header">
+                <div class="main_tab">
+                    <div class="main_tab-logo"><a href="../index.html"><img src="../img/logo.png" alt="">turtletype</a>
+                    </div>
+                    <divl class="main_tab-options">
+                        <ul>
+                            <li><a href="../index.html"><i class="fa-regular fa-keyboard"></i></a></li>
+                            <li>
+                                <div class="leader"><i class="fa-solid fa-crown"></i></div>
+                            </li>
+                            <li><a href="about.html"><i class="fa-solid fa-info"></i></a></li>
+                            <li><a href="settings.html"><i class="fa-solid fa-gear"></i></i></a></li>
+                        </ul>
+                    </divl>
+                </div>
+                <div class="menu">
+                    <div class="menu_notification">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="account">
+                        <a href="../index.html" class="exit_icon hide"><i
+                                class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                        <div class="user_display">
+                            <a href="login.html" class="user_page"><i class="fa-solid fa-user"></i></a>
+                            <div class="display_name"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------------setting tab-------------------->
+            <div class="setting_tab">
+                <label for="theme-select">Change Theme:</label>
+                <select id="theme-select" name="selectedTheme">
+                    <option value="dark_note">Dark Note</option>
+                    <option value="viridescent">Viridescent</option>
+                    <option value="dark">Dark</option>
+                    <option value="muted">Muted</option>
+                    <option value="dark_note">dark_note</option>
+                    <option value="viridescent">viridescent</option>
+                    <option value="dark">dark</option>
+                    <option value="muted">muted</option>
+                    <option value="dark_magic_girl">dark_magic_girl</option>
+                    <option value="8008">8008</option>
+                    <option value="carbon">carbon</option>
+                    <option value="our_theme">our_theme</option>
+                    <option value="dots">dots</option>
+                    <option value="nautilus">nautilus</option>
+                    <option value="serika">serika</option>
+                    <option value="serika_dark">serika_dark</option>
+                    <option value="bushido">bushido</option>
+                    <option value="red_samurai">red_samurai</option>
+                    <option value="rgb">rgb</option>
+                    <option value="oblivion">oblivion</option>
+                    <option value="magic_girl">magic_girl</option>
+                    <option value="metropolis">metropolis</option>
+                    <option value="mountain">mountain</option>
+                    <option value="laser">laser</option>
+                    <option value="retro">retro</option>
+                    <option value="dracula">dracula</option>
+                    <option value="nord">nord</option>
+                    <option value="mr_sleeves">mr_sleeves</option>
+                    <option value="olivia">olivia</option>
+                    <option value="bliss">bliss</option>
+                    <option value="mizu">mizu</option>
+                    <option value="metaverse">metaverse</option>
+                    <option value="shadow">shadow</option>
+                    <option value="mint">mint</option>
+                    <option value="miami">miami</option>
+                    <option value="miami_nights">miami_nights</option>
+                    <option value="modern_dolch">modern_dolch</option>
+                    <option value="botanical">botanical</option>
+                    <option value="9009">9009</option>
+                    <option value="bingsu">bingsu</option>
+                    <option value="terminal">terminal</option>
+                    <option value="lavender">lavender</option>
+                    <option value="taro">taro</option>
+                    <option value="striker">striker</option>
+                    <option value="gruvbox_dark">gruvbox_dark</option>
+                    <option value="gruvbox_light">gruvbox_light</option>
+                    <option value="monokai">monokai</option>
+                    <option value="sonokai">sonokai</option>
+                    <option value="camping">camping</option>
+                    <option value="voc">voc</option>
+                    <option value="vaporwave">vaporwave</option>
+                    <option value="pulse">pulse</option>
+                    <option value="matrix">matrix</option>
+                    <option value="olive">olive</option>
+                    <option value="strawberry">strawberry</option>
+                    <option value="night_runner">night_runner</option>
+                    <option value="cyberspace">cyberspace</option>
+                    <option value="joker">joker</option>
+                    <option value="dualshot">dualshot</option>
+                    <option value="solarized_dark">solarized_dark</option>
+                    <option value="solarized_light">solarized_light</option>
+                    <option value="terra">terra</option>
+                    <option value="red_dragon">red_dragon</option>
+                    <option value="hammerhead">hammerhead</option>
+                    <option value="future_funk">future_funk</option>
+                    <option value="milkshake">milkshake</option>
+                    <option value="aether">aether</option>
+                    <option value="froyo">froyo</option>
+                    <option value="retrocast">retrocast</option>
+                    <option value="luna">luna</option>
+                    <option value="graen">graen</option>
+                    <option value="bento">bento</option>
+                    <option value="watermelon">watermelon</option>
+                    <option value="menthol">menthol</option>
+                    <option value="ishtar">ishtar</option>
+                    <option value="mashu">mashu</option>
+                    <option value="deku">deku</option>
+                    <option value="honey">honey</option>
+                    <option value="shoko">shoko</option>
+                    <option value="norse">norse</option>
+                    <option value="matcha_moccha">matcha_moccha</option>
+                    <option value="cafe">cafe</option>
+                    <option value="alpine">alpine</option>
+                    <option value="superuser">superuser</option>
+                    <option value="ms_cupcakes">ms_cupcakes</option>
+                    <option value="dollar">dollar</option>
+                    <option value="lime">lime</option>
+                    <option value="sweden">sweden</option>
+                    <option value="wavez">wavez</option>
+                    <option value="nebula">nebula</option>
+                    <option value="lil_dragon">lil_dragon</option>
+                    <option value="pastel">pastel</option>
+                    <option value="alduin">alduin</option>
+                    <option value="paper">paper</option>
+                    <option value="fundamentals">fundamentals</option>
+                    <option value="drowning">drowning</option>
+                    <option value="iceberg_dark">iceberg_dark</option>
+                    <option value="iceberg_light">iceberg_light</option>
+                    <option value="onedark">onedark</option>
+                    <option value="darling">darling</option>
+                    <option value="repose_dark">repose_dark</option>
+                    <option value="repose_light">repose_light</option>
+                    <option value="horizon">horizon</option>
+                    <option value="rudy">rudy</option>
+                    <option value="stealth">stealth</option>
+                    <option value="80s_after_dark">80s_after_dark</option>
+                    <option value="arch">arch</option>
+                    <option value="rose_pine">rose_pine</option>
+                    <option value="rose_pine_moon">rose_pine_moon</option>
+                    <option value="rose_pine_dawn">rose_pine_dawn</option>
+                    <option value="copper">copper</option>
+                    <option value="grand_prix">grand_prix</option>
+                    <option value="peaches">peaches</option>
+                    <option value="bouquet">bouquet</option>
+                    <option value="midnight">midnight</option>
+                    <option value="blueberry_light">blueberry_light</option>
+                    <option value="blueberry_dark">blueberry_dark</option>
+                    <option value="fledgling">fledgling</option>
+                    <option value="ez_mode">ez_mode</option>
+                    <option value="vscode">vscode</option>
+                    <option value="material">material</option>
+                    <option value="godspeed">godspeed</option>
+                    <option value="witch_girl">witch_girl</option>
+                    <option value="terror_below">terror_below</option>
+                    <option value="sewing_tin">sewing_tin</option>
+                    <option value="soaring_skies">soaring_skies</option>
+                    <option value="sewing_tin_light">sewing_tin_light</option>
+                    <option value="chaos_theory">chaos_theory</option>
+                    <option value="hanok">hanok</option>
+                    <option value="comfy">comfy</option>
+                    <option value="tiramisu">tiramisu</option>
+                    <option value="diner">diner</option>
+                    <option value="modern_ink">modern_ink</option>
+                    <option value="dev">dev</option>
+                    <option value="moonlight">moonlight</option>
+                    <option value="pink_lemonade">pink_lemonade</option>
+                    <option value="creamsicle">creamsicle</option>
+                    <option value="beach">beach</option>
+                    <option value="desert_oasis">desert_oasis</option>
+                    <option value="frozen_llama">frozen_llama</option>
+                    <option value="ryujinscales">ryujinscales</option>
+                    <option value="trackday">trackday</option>
+                    <option value="fruit_chew">fruit_chew</option>
+                    <option value="evil_eye">evil_eye</option>
+                    <option value="trance">trance</option>
+                    <option value="fire">fire</option>
+                    <option value="aurora">aurora</option>
+                    <option value="leather">leather</option>
+                    <option value="fleuriste">fleuriste</option>
+                    <option value="dmg">dmg</option>
+                    <option value="catppuccin">catppuccin</option>
+                    <option value="snes">snes</option>
+                    <option value="passion_fruit">passion_fruit</option>
+                    <option value="blue_dolphin">blue_dolphin</option>
+                    <option value="mexican">mexican</option>
+                    <option value="husqy">husqy</option>
+                    <option value="peach_blossom">peach_blossom</option>
+                    <option value="dino">dino</option>
+                    <option value="tron_orange">tron_orange</option>
+                    <option value="hedge">hedge</option>
+                    <option value="modern_dolch_light">modern_dolch_light</option>
+                    <option value="iv_spade">iv_spade</option>
+                    <option value="iv_clover">iv_clover</option>
+                    <option value="cheesecake">cheesecake</option>
+                    <option value="earthsong">earthsong</option>
+                    <option value="purpleish">purpleish</option>
+                    <option value="nord_light">nord_light</option>
+                    <option value="slambook">slambook</option>
+                    <option value="breeze">breeze</option>
+                    <option value="cherry_blossom">cherry_blossom</option>
+                    <option value="everblush">everblush</option>
+                    <option value="grape">grape</option>
+                    <option value="rainbow_trail">rainbow_trail</option>
+                </select>
+            </div>
+            <!------------------settings tab ends-->
+        </div>
+        <div class="big">
+            <div class="feedback-section">
+                <h2>FeedBack</h2>
+                <div class="input-group">
+                    <input type="text" class="user-input user-id" placeholder="User ID">
+                </div>
+                <div class="input-group">
+                    <textarea rows="10" cols="50" id="advice" class="user-input feedback-text"
+                        placeholder="Your feedback"></textarea>
+                </div>
+                <div class="rating-section">
+                    <p>Rating:</p>
+                    <br>
+                    <div class="star-rating">
+                        <input type="radio" name="feedback-rating" id="feedback-rate-1" value="1">
+                        <label for="feedback-rate-1"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" name="feedback-rating" id="feedback-rate-2" value="2">
+                        <label for="feedback-rate-2"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" name="feedback-rating" id="feedback-rate-3" value="3">
+                        <label for="feedback-rate-3"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" name="feedback-rating" id="feedback-rate-4" value="4">
+                        <label for="feedback-rate-4"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" name="feedback-rating" id="feedback-rate-5" value="5">
+                        <label for="feedback-rate-5"><i class="fa-solid fa-star"></i></label>
+                    </div>
+                </div>
+                <br>
+                <div class="input-group">
+                    <div class="message_box feedback_message"></div>
+                    <input type="submit" class="submit-feedback" value="Submit">
+                </div>
+            </div>
+            <div class="complain-section">
+                <h2>Complain</h2>
+                <div class="input-group">
+                    <input type="text" class="user-input user-id-complain" placeholder="User ID">
+                </div>
+                <div class="input-group">
+                    <textarea rows="10" cols="50" id="problem" class="user-input complain-text"
+                        placeholder="Describe the issue"></textarea>
+                </div>
+                <div class="input-group">
+                    <div class="message_box complaint_message"></div>
+                    <input type="submit" class="submit-complain" value="Submit">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="leader_board hidden">
+        <div class="leader_header">
+            <h1>All-Time | Leaderbords</h1>
+            <div class="exit"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="title">
+            <div>
+                <p>Time 15</p>
+                <div class="row_name">
+                    <ul>
+                        <li>#rank</li>
+                        <li>#name</li>
+                        <li>wpm<br><span class="weight">accuracy</span></li>
+                        <li>raw<br><span class="weight">consistency</span></li>
+                        <li>time</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>Time 60</p>
+                <div class="row_name">
+                    <ul>
+                        <li>#rank</li>
+                        <li>#name</li>
+                        <li>wpm<br><span class="weight">accuracy</span></li>
+                        <li>raw<br><span class="weight">consistency</span></li>
+                        <li>time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row_name">
+              <ul>
+                <li>#rank</li>
+                <li>#name</li>
+                <li>wpm<br><span class="weight">accuracy</span></li>
+                <li>raws<br><span class="weight">consistency</span></li>
+                <li>time</li>
+              </ul>
+            </div> -->
+        <div class="leader_body">
+            <div class="board_15">
+            </div>
+            <div class="board_60"></div>
+        </div>
+    </div>
+
+    <script src="../notification.js"></script>
+    <script src="../theme.js" type="module"></script>
+    <script type="module">
+        import { getSavedTheme, saveTheme } from './../theme.js';
+
+        const root = document.getElementById("root");
+        const themeSelect = document.getElementById("theme-select");
+
+        // Set the initial theme based on the saved theme or use the default
+        root.href = `../themes/${getSavedTheme()}.css`;
+
+        // Event listener for theme change
+        themeSelect.addEventListener("change", function () {
+            const selectedTheme = themeSelect.value;
+
+            // Update the theme dynamically
+            root.href = `../themes/${selectedTheme}.css`;
+
+            // Save the selected theme to local storage
+            saveTheme(selectedTheme);
+        });
+    </script>
+    <script src="../logout.js" type="module"></script>
+    <script src="../leaderboard.js"></script>
+    <script src="../feedback.js"></script>
+</body>
+
+</html>
