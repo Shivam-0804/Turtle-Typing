@@ -42,9 +42,9 @@ To run the project locally, follow these steps:
 ## Contributors
 
 - <span style="color:red">Shivam-0804</span>
-- <span style="color:green">Abhinav</span>
-- <span style="color:blue">Aryan</span>
-- <span style="color:orange">Sabeeh</span>
+- <span style="color:green">abhis1n</span>
+- <span style="color:blue">ocidemus</span>
+- <span style="color:orange">sabeehahsan</span>
 
 ## License
 
