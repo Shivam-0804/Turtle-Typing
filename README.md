@@ -53,3 +53,6 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 - Thanks to the contributors who helped develop and test the application.
+
+
+![image](https://github.com/Shivam-0804/Turtle-Typing/assets/124515617/72151ed4-73ff-4f89-9e4b-af40afa0a3e8)
