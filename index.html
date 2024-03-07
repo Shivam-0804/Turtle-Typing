@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/fav-icon.png" />
+  <link rel="stylesheet" href="themes/8008.css" id="root">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="img_css/all.min.css">
+  <link rel="stylesheet" href="img_css/fontawesome.min.css">
+  <title>Turtletype | A minimalistic site to learn typing</title>
+</head>
+
+<body>
+  <!-- main is the outer body of the complete website -->
+  <!-- n_hide -->
+  <div class="main">
+    <div class="notification_tab hidden">
+      <div class="notification_tab-content">
+        <div class="announcement">
+          <div class="n_text">
+            <i class="fa-solid fa-bullhorn"></i>
+            <p>Announcements</p>
+          </div>
+          <div class="message_1">
+
+          </div>
+        </div>
+        <div class="notification">
+          <div class="n_text">
+            <i class="fa-solid fa-message"></i>
+            <p>Notifications</p>
+          </div>
+          <div class="message_2">
+            <!-- <div class="box">
+              <p class="date_time"></p>
+              <p class="text_message"></p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main_menu is the main front of the site that align the element in the center  -->
+    <div class="main_menu">
+      <!-- header is the upper part of the site that contains logo and user details setting etc -->
+      <div class="header">
+        <div class="main_tab">
+          <div class="main_tab-logo"><a href="index.html"><img src="img/logo.png" alt="">turtletype</a></div>
+          <divl class="main_tab-options">
+            <ul>
+              <li><a href="index.html"><i class="fa-regular fa-keyboard"></i></a></li>
+              <li>
+                <div class="leader"><i class="fa-solid fa-crown"></i></div>
+              </li>
+              <li><a href="pages/about.html"><i class="fa-solid fa-info"></i></a></li>
+              <li><a href="pages/settings.html"><i class="fa-solid fa-gear"></i></i></a></li>
+            </ul>
+          </divl>
+        </div>
+        <!-------notification tab -------->
+        <div class="menu">
+          <div class="menu_notification">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="account">
+            <a href="index.html" class="exit_icon hide"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            <div class="user_display">
+              <a href="pages/login.html" class="user_page"><i class="fa-solid fa-user"></i></a>
+              <div class="display_name"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------options and typing area -------------------->
+      <div class="typing_area ">
+        <div class="options_tab">
+          <div class="words">
+            <input type="radio" id="punctuation-radio" name="para" value="punctuation">
+            <label for="punctuation-radio"> @ punctuation</label>
+            <input type="radio" id="numbers-radio" name="para" value="number">
+            <label for="numbers-radio"> # numbers</label>
+          </div>
+          <div class="time">
+            <input type="radio" id="time-radio" name="time" checked value="1">
+            <label for="time-radio"> <i class="fa-solid fa-clock"></i>time</label>
+            <input type="radio" id="words-radio" name="para" value="normal">
+            <label for="words-radio"> <i class="fa-solid fa-a"></i> words</label>
+            <input type="radio" id="quotes-radio" name="para" value="quotes">
+            <label for="quotes-radio"> <i class="fa-solid fa-quote-left"></i>quotes</label>
+            <input type="radio" id="custom-radio" name="time">
+            <label for="custom-radio"> <i class="fa-solid fa-screwdriver-wrench"></i>custom</label>
+          </div>
+          <div class="time-options">
+            <input type="radio" id="15" value="15" name="val" checked>
+            <label for="15">15</label>
+            <input type="radio" id="30" value="30" name="val">
+            <label for="30">30</label>
+            <input type="radio" id="60" value="60" name="val">
+            <label for="60">60</label>
+            <input type="radio" id="120" value="120" name="val">
+            <label for="120">120</label>
+            <input type="radio" id="custom-time-radio" name="val">
+            <label for="custom-time-radio"> <i class="fa-solid fa-screwdriver-wrench"></i></label>
+          </div>
+        </div>
+
+        <!-- text area in the main part of the site -->
+        <div class="type_tab">
+          <div class="timeOut"></div>
+          <div class="text">
+            <div class="text_area">
+              <div class="cursor">|</div>
+              <div class="p"></div>
+            </div>
+            <div class="focus">
+              <p> <i class="fa-solid fa-arrow-pointer"></i> Click here to start typing</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-reset"><i class="fa-solid fa-rotate-right"></i></div>
+      </div>
+      <!--------------------end of typing area-->
+
+
+      <!------------- result tab --------------->
+      <div class="result_tab hidden">
+        <div class="grid">
+          <div class="element canvas"><canvas id="myChart" width="400" height="100"></canvas></div>
+          <div class="element">
+            <p>wpm</p><span id="wpm">0</span>
+          </div>
+          <div class="element">
+            <p>acc</p><span id="accuracy">0</span>
+          </div>
+          <div class="element">
+            <p>test type</p>
+            <spanc class="type">0</spanc>
+          </div>
+          <div class="element">
+            <p>other</p><span>0</span>
+          </div>
+          <div class="element">
+            <p>raw</p><span id="rawSpeed">0</span>
+          </div>
+          <div class="element">
+            <p>character</p><span id="char">0</span>
+          </div>
+          <div class="element">
+            <p>consistency</p><span id="consistency">0</span>
+          </div>
+          <div class="element">
+            <p>time</p><span id="time">0</span>
+          </div>
+        </div>
+        <div class="text-reset"><a href="index.html"><i class="fa-solid fa-rotate-right"></i></a></div>
+      </div>
+      <!-----------end of result tab -------------->
+    </div>
+    <div class="custom_time hidden">
+      <div class="content">
+        <p class="timetext">Enter time value<br>(in seconds): </p>
+        <input type="number" id="tvalue">
+        <input type="submit" value="Submit" id="submit">
+      </div>
+    </div>
+  </div>
+  <div class="leader_board hidden">
+    <div class="leader_header">
+      <h1>All-Time | Leaderbords</h1>
+      <div class="exit"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <div class="title">
+      <div>
+        <p>Time 15</p>
+        <div class="row_name">
+          <ul>
+            <li>#rank</li>
+            <li>#name</li>
+            <li>wpm<br><span class="weight">accuracy</span></li>
+            <li>raw<br><span class="weight">consistency</span></li>
+            <li>time</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p>Time 60</p>
+        <div class="row_name">
+          <ul>
+            <li>#rank</li>
+            <li>#name</li>
+            <li>wpm<br><span class="weight">accuracy</span></li>
+            <li>raw<br><span class="weight">consistency</span></li>
+            <li>time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="row_name">
+      <ul>
+        <li>#rank</li>
+        <li>#name</li>
+        <li>wpm<br><span class="weight">accuracy</span></li>
+        <li>raws<br><span class="weight">consistency</span></li>
+        <li>time</li>
+      </ul>
+    </div> -->
+    <div class="leader_body">
+      <div class="board_15">
+      </div>
+      <div class="board_60"></div>
+    </div>
+  </div>
+  <script src="para.js"></script>
+  <script type="module">
+    import { getSavedTheme, saveTheme } from './theme.js';
+
+    const root = document.getElementById("root");
+    const themeSelect = document.getElementById("theme-select");
+
+    // Set the initial theme based on the saved theme or use the default
+    root.href = `themes/${getSavedTheme()}.css`;
+  </script>
+  <script src="node_modules/chartjs/dist/chart.umd.js"></script>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
