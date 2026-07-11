@@ -1219,3 +1219,16 @@ img {
     font-size: 1.4rem;
   }
 }
+.element.canvas {
+  position: relative;
+  min-height: 22rem;
+  height: 100%;
+}
+.element.canvas canvas {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .element.canvas {
+    min-height: 18rem;
+  }
+}
