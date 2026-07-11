@@ -969,3 +969,232 @@ footer a:hover {
   height: 80vh;
   transition: all 0.2s ease-in-out;
 }
+
+/* ==========================================================================
+   RESPONSIVE / DEVICE-ADAPTIVE LAYOUT
+   The rules above were written for a single desktop width. Everything below
+   makes the same components scale down to tablets and phones instead of
+   overflowing or getting clipped, using the same variables/theme system.
+   ========================================================================== */
+
+/* Fluid base scale: every rem-based size in this file shrinks smoothly
+   between phone and desktop widths instead of needing a rewrite per element. */
+html {
+  font-size: clamp(48%, 4vw + 30%, 62.5%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ---- large tablets / small laptops -------------------------------------- */
+@media (max-width: 1024px) {
+  .main_menu {
+    width: 90%;
+    padding-top: 3rem;
+  }
+
+  .options_tab {
+    width: 95%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 6rem;
+  }
+
+  .canvas {
+    grid-row: auto;
+    grid-column: 1 / -1;
+  }
+
+  .leader_board {
+    width: 95%;
+  }
+}
+
+/* ---- tablets / large phones ---------------------------------------------- */
+@media (max-width: 768px) {
+  .main_menu {
+    width: 95%;
+    padding-top: 2rem;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .main_tab-options ul li {
+    margin-left: 1.2rem;
+  }
+
+  .options_tab {
+    height: auto;
+    padding: 1.5rem 0;
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+  }
+
+  .options_tab div {
+    flex-wrap: wrap;
+    row-gap: 0.8rem;
+  }
+
+  .text {
+    margin-top: 10rem;
+  }
+
+  .text_area .p {
+    font-size: 2.2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .notification_tab {
+    width: 60%;
+  }
+
+  .leader_body,
+  .title {
+    grid-template-columns: 1fr;
+  }
+
+  .leader_board .board_15,
+  .leader_board .board_60 {
+    height: 30vh;
+  }
+
+  .login_tab {
+    margin-top: 8rem;
+  }
+
+  .login_tab .forms {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .login_tab .forms form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .window {
+    width: 85%;
+    height: auto;
+    padding: 3rem;
+  }
+
+  .user_details_board {
+    position: relative;
+    width: 95%;
+    margin: 2rem auto;
+  }
+
+  .user_details {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .user_icon {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .big {
+    width: 90%;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem auto;
+  }
+}
+
+/* ---- phones ---------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .main_menu {
+    width: 100%;
+    padding: 1.5rem 1rem 0;
+  }
+
+  .main_tab-logo {
+    font-size: 2rem;
+  }
+
+  .main_tab-logo a img {
+    height: 3.2rem;
+  }
+
+  .menu_notification i,
+  .account i {
+    padding-right: 1rem;
+  }
+
+  .time-options {
+    flex-wrap: wrap;
+  }
+
+  .text {
+    margin-top: 7rem;
+    height: calc(3.4rem * 3);
+  }
+
+  .text_area .p {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .cursor {
+    font-size: 2.2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.2rem;
+    margin-top: 4rem;
+  }
+
+  .element span {
+    font-size: 2.6rem;
+  }
+
+  .notification_tab {
+    width: 85%;
+  }
+
+  .leader_header {
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .leader_body,
+  .title {
+    padding: 0 1.5rem;
+  }
+
+  .leader_board div ul {
+    grid-template-columns: 0.6fr 2fr 1fr 1fr 1fr;
+  }
+
+  .custom_time {
+    width: 80%;
+  }
+}
+
+/* landscape phones / very short viewports: avoid tall vertical margins
+   pushing the typing area off screen */
+@media (max-height: 500px) and (orientation: landscape) {
+  .main_menu {
+    padding-top: 1rem;
+  }
+
+  .text {
+    margin-top: 4rem;
+  }
+}
