@@ -1198,3 +1198,24 @@ img {
     margin-top: 4rem;
   }
 }
+
+/* live wpm / accuracy indicator shown while a test is running */
+.liveStats {
+  position: absolute;
+  right: 0;
+  top: -10rem;
+  font-size: 1.8rem;
+  color: var(--sub-color);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.liveStats.active {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .liveStats {
+    font-size: 1.4rem;
+  }
+}
